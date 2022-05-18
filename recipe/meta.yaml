@@ -1,4 +1,4 @@
-{% set version = '1.7.0' %}
+{% set version = "1.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/loadeR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6d2b828e75dd785115658004a0d60ece0320dd5992a69d05f545357d353b7f52
+  sha256: 2af8c4576c837963eb86100a0cc8388d83742b1c555c0d104c5c61abd3e79ac9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -47,9 +47,7 @@ test:
 about:
   home: https://github.com/SantanderMetGroup/climate4R
   license: GPL-3.0-or-later
-  summary: Enables harmonized access to either remote climate databases via OPeNDAP or to locally
-    stored data, allowing the retrieval of user-defined dimensional slices from large
-    climate datasets. For more details see Iturbide et al 2019 <http://dx.doi.org/10.1016/j.envsoft.2018.09.009>.
+  summary: Enables harmonized access to either remote climate databases via OPeNDAP or to locally stored data, allowing the retrieval of user-defined dimensional slices from large climate datasets. For more details see Iturbide et al 2019 <http://dx.doi.org/10.1016/j.envsoft.2018.09.009>.
   doc_url: https://github.com/SantanderMetGroup/loadeR/wiki
   dev_url: https://github.com/SantanderMetGroup/loadeR
   license_family: GPL3
@@ -60,7 +58,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - cofinoa
-    
+
 
 # Package: loadeR
 # Depends: R(>= 3.1.0), rJava, loadeR.java, climate4R.UDG(>= 0.2.0)
