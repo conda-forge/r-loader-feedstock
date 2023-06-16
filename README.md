@@ -1,11 +1,11 @@
-About r-loader
-==============
+About r-loader-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-loader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SantanderMetGroup/climate4R
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-loader-feedstock/blob/main/LICENSE.txt)
 
 Summary: Enables harmonized access to either remote climate databases via OPeNDAP or to locally stored data, allowing the retrieval of user-defined dimensional slices from large climate datasets. For more details see Iturbide et al 2019 <http://dx.doi.org/10.1016/j.envsoft.2018.09.009>.
 
