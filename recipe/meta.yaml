@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/loadeR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2af8c4576c837963eb86100a0cc8388d83742b1c555c0d104c5c61abd3e79ac9
+  sha256: 8196918f13d0085f669c6baf50b461a6f0161e17c8478e700de2b41a6ed26ec9
 
 build:
   merge_build_host: true  # [win]
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
