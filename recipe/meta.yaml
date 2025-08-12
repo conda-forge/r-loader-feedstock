@@ -1,4 +1,4 @@
-{% set version = "1.8.2" %}
+{% set version = "1.8.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/loadeR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 688686294f7a8d8217e3abde63007fcc7329bad075cc1b7d405ccfe5ac6a9a77
+  sha256: 5bca0211dbcec66244d27f5afdd1df45b187c201967d87a5a53dbb67d7683df6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,6 +56,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - cofinoa
+    - mor427unican
 
 
 # Package: loadeR
